@@ -1,0 +1,22 @@
+{
+    "mqtt": {
+        "connection": "tcp://limero.ddns.net",
+        "keepAliveInterval": 5,
+        "device": "QT",
+        "LW": {
+            "topic": "src/qt/system/alive",
+            "message": "false",
+            "qos": 1,
+            "retain": true
+        },
+        "subscribe": [
+            "src/triac/#",
+            "src/wiring/#"
+        ]
+    },
+    "log": {
+        "level": "I",
+        "file": "log_mqtt2qt.",
+        "console": true
+    }
+}
